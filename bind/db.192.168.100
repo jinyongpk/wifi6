@@ -1,0 +1,15 @@
+;
+; BIND reverse data file for home.com
+;
+$TTL	604800
+@	IN	SOA	ns.home.com. root.home.com. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns.home.com.
+2	IN	PTR	ns.home.com.
+2	IN	PTR	root.home.com.
+1	IN	PTR	router.home.com.

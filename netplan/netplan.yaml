@@ -1,0 +1,25 @@
+network:
+  version: 2
+  renderer: NetworkManager
+
+  ethernets:
+    enp3s0:
+      dhcp4: no
+    wlp4s0:
+      dhcp4: no
+
+  bridges:
+    br0:
+      dhcp4: no
+      interfaces:
+      - enp3s0
+      - wlp4s0
+      addresses:
+      - 192.168.100.2/24
+      gateway4: 192.168.100.1
+      nameservers:
+        addresses:
+        - 192.168.100.2
+        search:
+        - home.com
+
