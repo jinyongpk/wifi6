@@ -1,4 +1,4 @@
-# Setting Wifi6
+# Setting Wifi6 with hostapd
 
 **Prerequirement**
 - Ethernet 1Gbps
